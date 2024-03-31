@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-family: "Nunito", Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 16px;
+	margin: 0;
+	color: #323334
+}
+.text-title
+{
+	font-size: 22px;
+	color: #F6CF0D
+}
+h1{font-size: 2.5rem; margin-top:0}
+a{
+	color:  #323334;
+	text-decoration: none;
+}
+a:hover
+{
+	color:rgba(252,222,23,1.00);
+}
+
+nav{
+	/*border-top: 2px #323334 solid;
+	border-bottom: 2px #323334 solid*/
+}
+nav ul
+{
+	list-style: none;
+	display: flex;
+	padding: 0;
+	justify-content:space-between;
+	
+}
+nav ul li a
+{
+	padding: 10px 15px ;
+	display: block;
+	border-bottom: 2px solid #fffff;
+	transition: all 1s;
+}
+nav ul li a:hover
+{
+	color: #000;
+	border-bottom: 2px solid #F2994A
+}
+/*style cho menu con*/
+nav ul li {position: relative}
+nav ul li ul
+{
+	position: absolute;
+	flex-direction: column;
+	background:#D9F8FD;
+	width: 230px;
+	left:0;
+	top:100%; 
+	box-shadow: 0 0 5px #666;
+	transition: all 1s;
+	visibility: hidden;
+	opacity: 0;
+	z-index: 9;
+}
+nav ul li:hover ul
+{
+	top:100%;
+	opacity: 1;
+	visibility: visible;
+}
+.banner
+{
+	position: relative
+}
+.banner-caption
+{
+	width: 40%; height: 70%;
+	position: absolute;
+	top: 35%; right: 50%;
+	font-size: 1.2rem
+}
+.spham{ position: relative
+}
+.sp-icon
+{
+  	position: absolute; 
+	background-color: rgba(244,222,18,0.55);
+	top:60%; left:22%;
+	border: 2px solid white;
+	padding:10px 30px;
+	border-radius: 50px;
+	opacity: 0;
+	transition: all 0.5s
+}
+.spham:hover>.sp-icon{opacity: 1; top:50%}
+.top-page
+{position: relative}
+.top-page .caption
+{
+	position: absolute;
+	top: 15%;
+	width: 100%;
+	color: #323334;
+	/*text-shadow: 1px 1px 5px #333;*/
+}
+.text-shadow{ text-shadow: 1px 1px 5px #fff}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.bg-navbar{
+	background-color:#D9F8FD;
+	box-shadow: 2px 2px 10px #333;
+	width:100%;
+	height: 110px
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div-forms {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chatbox
+{
+	width: 300px; height: 200px;
+	background: lightblue;
+	position: fixed;
+	right: -250px; bottom: 0;
+	z-index: 2;
+	transition: all 1s
+}
+.overdark
+{
+	width:100%; height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	left:0; top:0;
+	z-index: 1
+}
+.ads-box
+{
+	width: 50%; height:80%;
+	background: white;
+	position: fixed;
+	left:25%; right:25%;
+	top:10%; bottom:10%;
+	z-index: 3
+}
+.chatbox:hover{
+	right: 0;
+	background: blue
+}
+footer
+{
+	
+	padding: 50px 0;
+	color:#1A1819
+}
+footer ul{margin:0; padding: 0; list-style: none}
+footer a{ color:#1A1819; padding: 10px 0; display: block}
+.img-radius{
+    border-top-right-radius: 5%;
+	border-top-left-radius: 5%;
+}
+.img-radiusfull{ border-radius: 5%}
+.foodshadow{box-shadow: 2px 2px 5px}
+.ctrinh{ position: relative
+}
+.ct-icon
+{
+  	position: absolute; 
+	background-color:rgba(89,188,201,0.53);
+	top:60%; left:25%;
+	padding:10px 40px;
+	border-radius: 12px;
+	opacity: 0;
+	transition: all 0.5s
+}
+.ctrinh:hover>.ct-icon{opacity: 1; top:50%}
+
+
+
